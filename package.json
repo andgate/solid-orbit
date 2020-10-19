@@ -1,7 +1,6 @@
 {
   "name": "solid-orbit",
   "version": "0.1.0",
-  "private": true,
   "description": "Solidjs provider and hooks for orbit js",
   "author": "Gabriel Anderson",
   "license": "MIT",
