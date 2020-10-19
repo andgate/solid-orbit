@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "module": "ES2020",
+    "target": "ES2020",
+    "declaration": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "newLine": "LF",
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "outDir": "./types",
+    "baseUrl": "./src",
+    "paths": {
+        "solid-orbit/*": [
+            "*"
+        ]
+    }
+  },
+  "include": [ "src" ],
+  "exclude": [ "node_modules" ]
+}

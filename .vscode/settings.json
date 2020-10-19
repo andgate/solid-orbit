@@ -1,0 +1,9 @@
+{
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "editor.rulers": [
+        80
+    ],
+    "editor.tabSize": 2
+}
