@@ -2,7 +2,7 @@
 
 [![npm](https://img.shields.io/npm/v/solid-orbit.svg)](https://www.npmjs.com/package/solid-orbit)
 
-(Solid)[https://github.com/ryansolid/solid] bindings for [Orbit](https://orbitjs.com/).
+[Solid](https://github.com/ryansolid/solid) bindings for [Orbit](https://orbitjs.com/).
 
 This package provides Solid a provider and hooks for Orbit. Most notably, this provides a `useQuery` hook which is a query transform listener, updating component props with records as they are changed.
 
@@ -29,7 +29,6 @@ import { render, template, insert, createComponent } from 'solid-js/dom'
 import MemorySource from '@orbit/memory'
 import { Schema } from '@orbit/data'
 import { OrbitProvider, OrbitRecord } from 'solid-orbit'
-import { nanoid } from 'nanoid'
 
 const schema = new Schema({
   models: {
