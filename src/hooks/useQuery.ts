@@ -1,9 +1,9 @@
 import { Transform } from '@orbit/data'
 import MemorySource from '@orbit/memory'
 import { createMemo, createSignal, onCleanup } from 'solid-js'
-import { useMemorySource } from 'solid-orbit/hooks/useMemorySource'
 import { doesTransformCauseUpdate } from 'solid-orbit/helpers/doesTransformCauseUpdate'
 import { getRecordsFromQueryResult } from 'solid-orbit/helpers/orbit-helpers'
+import { useMemorySource } from 'solid-orbit/hooks/useMemorySource'
 import { IQuerySubscriptions, RecordsToProps } from 'solid-orbit/types'
 
 export const useQuery = <T extends Record<string, unknown>>(

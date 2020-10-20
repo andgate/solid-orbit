@@ -1,7 +1,7 @@
 {
   "name": "solid-orbit",
   "version": "0.1.0",
-  "description": "Solidjs provider and hooks for orbit js",
+  "description": "Solid bindings for Orbit.",
   "author": "Gabriel Anderson",
   "license": "MIT",
   "homepage": "https://github.com/andgate/solid-orbit",
