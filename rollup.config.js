@@ -1,15 +1,16 @@
 import alias from '@rollup/plugin-alias';
 import babel from "@rollup/plugin-babel";
 import cleanup from "rollup-plugin-cleanup";
-import path from "path";
 import nodeResolve from "@rollup/plugin-node-resolve";
+import path from "path";
 
 export default {
   input: "src/index.ts",
   output: [
     {
       file: "lib/index.js",
-      format: "cjs"
+      format: "cjs",
+      exports: "auto"
     },
     {
       file: "dist/index.js",
@@ -18,22 +19,22 @@ export default {
   ],
   external: [
     /@babel\/runtime/,
-    "solid-js",
-    "@orbit/data",
-    "@orbit/memory",
-    "@orbit/record-cache"
+    /solid-js/,
+    /@orbit\/data/,
+    /@orbit\/memory/,
+    /@orbit\/record-cache/
   ],
   plugins: [
     nodeResolve({
       extensions: [".js", ".ts", ".tsx"]
     }),
     alias({
-      resol: [
+      resolve: [
         { find: 'solid-orbit', replacement: path.resolve(__dirname, "src") }
       ]
     }),
     babel({
-      extensions: [".js", ".ts"],
+      extensions: [".js", ".ts", ".tsx"],
       exclude: "node_modules/**",
       babelHelpers: "runtime"
     }),

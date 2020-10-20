@@ -3,6 +3,7 @@
     "module": "ES2020",
     "target": "ES2020",
     "declaration": true,
+    "emitDeclarationOnly": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
@@ -15,9 +16,7 @@
     "outDir": "./types",
     "baseUrl": "./src",
     "paths": {
-        "solid-orbit/*": [
-            "*"
-        ]
+      "solid-orbit/*": [ "*" ]
     }
   },
   "include": [ "src" ],

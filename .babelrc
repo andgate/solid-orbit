@@ -10,6 +10,15 @@
       {
         "regenerator": true
       }
+    ],
+    "@babel/plugin-syntax-dynamic-import",
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "solid-orbit": "./src"
+        }
+      }
     ]
   ]
 }
