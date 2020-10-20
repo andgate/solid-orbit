@@ -12,12 +12,12 @@ Based heavily on [developertown/react-orbitjs](https://github.com/developertown/
 
 npm
 ```
-npm install --save react-orbitjs
+npm install --save solid-orbit
 ```
 
 yarn
 ```
-yarn add react-orbitjs
+yarn add solid-orbit
 ```
 
 # Example
