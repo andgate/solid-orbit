@@ -1,6 +1,6 @@
 {
   "name": "solid-orbit",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Solid bindings for Orbit.",
   "author": "Gabriel Anderson",
   "license": "MIT",
@@ -36,6 +36,7 @@
     "@babel/preset-env": "^7.11.5",
     "@babel/preset-typescript": "^7.10.4",
     "@babel/runtime": "^7.11.2",
+    "@rollup/plugin-alias": "^3.1.1",
     "@rollup/plugin-babel": "^5.2.1",
     "@rollup/plugin-node-resolve": "^9.0.0",
     "@typescript-eslint/eslint-plugin": "^4.1.0",

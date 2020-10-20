@@ -1,7 +1,8 @@
-import nodeResolve from "@rollup/plugin-node-resolve";
+import alias from '@rollup/plugin-alias';
 import babel from "@rollup/plugin-babel";
 import cleanup from "rollup-plugin-cleanup";
-
+import path from "path";
+import nodeResolve from "@rollup/plugin-node-resolve";
 
 export default {
   input: "src/index.ts",
@@ -25,6 +26,11 @@ export default {
   plugins: [
     nodeResolve({
       extensions: [".js", ".ts", ".tsx"]
+    }),
+    alias({
+      resol: [
+        { find: 'solid-orbit', replacement: path.resolve(__dirname, "src") }
+      ]
     }),
     babel({
       extensions: [".js", ".ts"],
